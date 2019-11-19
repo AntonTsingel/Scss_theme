@@ -1,0 +1,22 @@
+{
+  "name": "theme_test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "del-cli": "^3.0.0",
+    "http-server": "^0.11.1",
+    "sass": "^1.23.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "style": "del main.css main.css.map && npx sass main.scss main.css",
+    "server": "npx node-static -p 3000",
+    "dev": "npm run style && npm run server",
+    "start": "npm run dev",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
